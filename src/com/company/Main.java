@@ -24,10 +24,10 @@ public class Main extends JFrame {
         Contents.button.addActionListener(new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(Contents.xV == 2){
-                    Contents.xV = -2;
-                } else if (Contents.xV == -2 || Contents.xV == 0){
-                    Contents.xV = 2;
+                if(Contents.xV == 3){
+                    Contents.xV = -3;
+                } else if (Contents.xV == -3 || Contents.xV == 0){
+                    Contents.xV = 3;
                 }
             }
         });

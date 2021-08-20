@@ -56,7 +56,7 @@ public class Contents extends JPanel implements ActionListener {
 
     }
 
-    public static int xV = 2;
+    public static int xV = 3;
     public static int yV = 0;
     public static int zV = 4;
 
@@ -71,16 +71,16 @@ public class Contents extends JPanel implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         move();
 
-        if(x == 0){
-            xV = 2;
+        if(x <= 0){
+            xV = 3;
             if(reachedEnd)
-            score += 50;
+            score += 75;
             eggsCollected++;
             reachedEnd = false;
-        } else if (x == 770){
-            xV = -2;
+        } else if (x >= 770){
+            xV = -3;
             if(!reachedEnd)
-            score += 50;
+            score += 25;
             reachedEnd = true;
         }
 
